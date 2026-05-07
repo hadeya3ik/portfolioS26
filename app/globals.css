@@ -59,10 +59,10 @@ html[data-theme="dark"] {
   --color-surface: var(--surface);
   --color-muted: var(--muted);
   --color-border: var(--border);
-  /* --font-sans: "Inter", Arial, Helvetica, sans-serif; */
-  /* --font-mono: "Inter", Arial, Helvetica, sans-serif; */
-  --font-sans: Helvetica, Arial, sans-serif;
-  --font-mono: Helvetica, Arial, sans-serif;
+  --font-sans: "Inter", Arial, Helvetica, sans-serif;
+  --font-mono: "Inter", Arial, Helvetica, sans-serif;
+  /* --font-sans: Helvetica, Arial, sans-serif; */
+  /* --font-mono: Helvetica, Arial, sans-serif; */
 }
 
 html,
@@ -80,8 +80,8 @@ body * {
 body {
   background: var(--background);
   color: var(--foreground);
-  /* font-family: "Inter", Arial, Helvetica, sans-serif; */
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  /* font-family: Helvetica, Arial, sans-serif; */
 }
 
 ::selection {

@@ -191,7 +191,7 @@ function Content() {
         <p>
           I used GSAP’s
           <a 
-            className="underline px-1 rounded transition-colors hover:bg-[#242428]"
+            className="underline px-1 rounded text-foreground transition-colors duration-300 hover:text-secondary"
             href="https://gsap.com/docs/v3/Plugins/DrawSVGPlugin/"
             target="_blank"
             rel="noopener noreferrer"

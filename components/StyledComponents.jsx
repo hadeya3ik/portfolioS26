@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import RollText from './RollText'
 
 export function ProjectContainer({children}) {
   return (
@@ -15,8 +14,18 @@ export function Heading({title}) {
   return (<div>
     <div className='flex justify-between'>
       <div className='flex gap-2'> 
-        <Link href="/projects" className='flex gap-2'>←</Link>
-        <RollText href="/projects" openInNewTab={false} >back</RollText>
+        <Link
+          href="/projects"
+          className="flex gap-2 text-foreground transition-colors duration-300 hover:text-secondary"
+        >
+          ←
+        </Link>
+        <Link
+          href="/projects"
+          className="text-foreground transition-colors duration-300 hover:text-secondary"
+        >
+          back
+        </Link>
       </div>
       <h3 className='font-semibold'>{title}</h3>
     </div>
@@ -30,7 +39,7 @@ export function Section({ title, subTitle = "", children }) {
     <section className="flex flex-col gap-1">
       <div className='flex flex-col gap-1 mb-'>
         
-        <h2 className="text-[18px] font-medium capitalize">{title}</h2>
+        <h2 className="text-[18px] font-[550] capitalize">{title}</h2>
         {subTitle && 
           <h3 className="text-[20px] font-semibold ">{subTitle}</h3>
         }

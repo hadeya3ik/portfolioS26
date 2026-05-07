@@ -154,7 +154,7 @@ export default function Folder() {
           <Link
             href="/projects"
             onClick={(event) => event.stopPropagation()}
-            className="group relative flex items-center justify-center overflow-hidden whitespace-nowrap rounded-full bg-nav px-3 py-1 text-xs font-medium text-[#717171] shadow-[var(--shadow-sm)] transition hover:text-[#000000]"
+            className="group relative flex items-center justify-center overflow-hidden whitespace-nowrap rounded-full bg-nav px-3 py-1 text-xs font-medium text-secondary shadow-[var(--shadow-sm)] transition-colors duration-300 hover:text-foreground"
           >
             {/* <motion.span
               className="absolute inset-1 rounded-full bg-background shadow-[var(--shadow-xs)]"

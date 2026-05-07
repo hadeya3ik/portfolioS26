@@ -44,7 +44,7 @@ export default function Experience() {
           />
 
           <div className="ml-1 min-w-0 flex-1">
-            <h3 className="truncate text-sm font-semibold leading-tight text-foreground ">
+            <h3 className="truncate text-sm font-[550] leading-tight text-foreground ">
               {experience.company}
             </h3>
             <p className="mt-1 truncate text-xs leading-tight text-foreground">

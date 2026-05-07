@@ -53,7 +53,7 @@ function Content() {
           The guideline highlights our typography, color palette, and key visual elements to maintain a consistent look 
           across all our content. You can read more about it on this 
           <a 
-            className="underline px-1 rounded transition-colors hover:bg-[#242428]"
+            className="underline px-1 rounded text-foreground transition-colors duration-300 hover:text-secondary"
             href="https://cloud-durian-fe8.notion.site/Smile-Club-Design-Guidelines-16ee0528e56180c899cfc891838d5339"
             target="_blank"
             rel="noopener noreferrer"
@@ -115,7 +115,7 @@ function Content() {
         <p>
           To generate the gradient we utilized the cosine gradient Library by 
           <a 
-            className="underline px-1 rounded transition-colors hover:bg-[#242428]"
+            className="underline px-1 rounded text-foreground transition-colors duration-300 hover:text-secondary"
             href="https://github.com/thi-ng/color/blob/master/src/gradients.org"
             target="_blank"
             rel="noopener noreferrer"
@@ -129,7 +129,7 @@ function Content() {
         <p>
           View the code for the fragment shader on 
           <a 
-            className="underline px-1 rounded transition-colors hover:bg-[#242428]"
+            className="underline px-1 rounded text-foreground transition-colors duration-300 hover:text-secondary"
             href="https://github.com/hadeya3ik/shaders"
             target="_blank"
             rel="noopener noreferrer"

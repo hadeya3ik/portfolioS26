@@ -18,7 +18,6 @@ const legacyProjectPaths = [
   "/govi",
   "/frames-on-frames",
   "/history-of-tau",
-  "/history-of-tau-teaser",
 ];
 
 type Theme = "light" | "dark";
@@ -120,7 +119,7 @@ export function Nav() {
         <div className="flex flex-1 items-center">
           <Link
             href="/"
-            className="text-sm font-medium leading-tight tracking-normal outline-none focus:outline-none focus-visible:outline-none"
+            className="text-sm font-[550] leading-tight tracking-normal outline-none focus:outline-none focus-visible:outline-none"
           >
             Hadeya Ikram
           </Link>

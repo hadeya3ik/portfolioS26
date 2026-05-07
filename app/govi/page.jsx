@@ -274,7 +274,7 @@ function Content() {
         <p>
           Feel free to check it out on
           <a 
-            className="underline px-1 rounded transition-colors hover:bg-[#242428]"
+            className="underline px-1 rounded text-foreground transition-colors duration-300 hover:text-secondary"
             href="https://github.com/hadeya3ik/govi"
             target="_blank"
             rel="noopener noreferrer"
@@ -305,7 +305,7 @@ function Content() {
           research and iterations to implement. Through this process, I learned how to manage 
           multiple element references using 
           <a 
-            className="underline px-1 rounded transition-colors hover:bg-[#242428]"
+            className="underline px-1 rounded text-foreground transition-colors duration-300 hover:text-secondary"
             href="https://react.dev/learn/manipulating-the-dom-with-refs#how-to-manage-a-list-of-refs-using-a-ref-callback"
             target="_blank"
             rel="noopener noreferrer"

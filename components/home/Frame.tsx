@@ -104,7 +104,7 @@ function Frame() {
       className="relative h-full min-h-80 w-full flex-1 overflow-hidden rounded-md bg-widget"
       onMouseDown={handleContainerMouseDown}
     >
-      <h1 className="absolute left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap text-md font-semibold tracking-tighter text-foreground sm:text-lg md:text-xl">
+      <h1 className="absolute left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap text-md font-[550] tracking-tighter text-foreground sm:text-lg md:text-xl">
         Hadeya Ikram
       </h1>
  
@@ -409,7 +409,7 @@ function DraggableFrameImage({
       animate={{ opacity: 1, scale: 1 }}
       transition={{
         duration: 0.45,
-        delay: 0.25 + itemIndex * 0.2,
+        delay: 0.25 + itemIndex * 0.08,
         ease: [0.22, 1, 0.36, 1],
       }}
       style={{

@@ -30,7 +30,7 @@ function Flower({
       transition={{ delay: index * 0.08, duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
       whileHover={{ y: -8 }}
       whileTap={{ scale: 0.96 }}
-      className="group flex flex-col items-center gap-2 text-xs font-medium text-foreground outline-none"
+      className="group flex flex-col items-center gap-2 text-xs font-medium text-foreground outline-none transition-colors duration-300 hover:text-secondary"
     >
       <div className="relative h-18 w-18">
         {Array.from({ length: 8 }).map((_, petal) => (

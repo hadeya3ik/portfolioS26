@@ -6,8 +6,32 @@ import { motion } from "motion/react";
 import { type ReactNode } from "react";
 import { Footer } from "./footer";
 
-const heading = "text-xs font-semibold text-foreground";
-const subheading = "mt-1 text-base text-foreground";
+const heading = "text-xs font-[550]";
+const subheading = "mt-1 text-base";
+const ease = [0.22, 1, 0.36, 1] as const;
+
+const projectCardVariants = {
+  hidden: { opacity: 0, scale: 0.9, y: 16 },
+  visible: (index: number) => ({
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    transition: {
+      duration: 2,
+      delay: index * 0.06,
+      ease,
+    },
+  }),
+  hover: {
+    y: -4,
+    scale: 1.01,
+    boxShadow: "var(--shadow-sm)",
+    transition: {
+      duration: 0.28,
+      ease,
+    },
+  },
+};
 
 function ProjectCard({
   href,
@@ -24,16 +48,18 @@ function ProjectCard({
 }) {
   return (
     <motion.article
-      initial={{ opacity: 0, scale: 0.9, y: 16 }}
-      animate={{ opacity: 1, scale: 1, y: 0 }}
-      transition={{
-        duration: 2,
-        delay: index * 0.06,
-        ease: [0.22, 1, 0.36, 1],
-      }}
-      className="flex-1 rounded-lg border border-border bg-widget p-3 shadow-[var(--shadow-xs)]"
+      custom={index}
+      variants={projectCardVariants}
+      initial="hidden"
+      animate="visible"
+      whileHover="hover"
+      whileTap={{ scale: 0.995 }}
+      className="flex-1 rounded-lg border border-border bg-widget p-3 shadow-[var(--shadow-xs)] will-change-transform"
     >
-      <Link href={href} className="block outline-none">
+      <Link
+        href={href}
+        className="block text-foreground outline-none transition-colors duration-300 hover:text-secondary"
+      >
         <div className="aspect-video w-full cursor-pointer overflow-hidden rounded-md border border-border bg-subtle">
           {children}
         </div>
@@ -65,7 +91,7 @@ function Projects() {
       <hr className="mt-1"/> */}
       <div className="flex flex-col gap-3 md:flex-row">
         <ProjectCard
-          href="/projects/govi"
+          href="/govi"
           title="Govi"
           description="Building a Smart Lighting Control System with Next.js"
           index={0}
@@ -80,7 +106,7 @@ function Projects() {
           />
         </ProjectCard>
         <ProjectCard
-          href="/projects/history-of-tau"
+          href="/history-of-tau"
           title="History of Tau Teaser"
           description="Designing a Narrative Web Experience for Warframes"
           index={1}
@@ -96,7 +122,7 @@ function Projects() {
       </div>
       <div className="flex flex-col gap-3 md:flex-row">
         <ProjectCard
-          href="/projects/frames-on-frames"
+          href="/frames-on-frames"
           title="Frames on Frames"
           description="Launching an Experimental Campaign Page for Warframes"
           index={2}
@@ -110,7 +136,7 @@ function Projects() {
           />
         </ProjectCard>
         <ProjectCard
-          href="/projects/smile"
+          href="/smile"
           title="Smile"
           description="Revamping a Student Led Brand for a Growing Community"
           index={3}

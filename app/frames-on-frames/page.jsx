@@ -110,7 +110,7 @@ function Content() {
       <ParagraphGroup>
         <p>
           <a 
-            className="underline px-1 rounded transition-colors hover:bg-[#242428]"
+            className="underline px-1 rounded text-foreground transition-colors duration-300 hover:text-secondary"
             href="https://www.warframe.com/steamworkshop/content-files-and-examples"
             target="_blank"
             rel="noopener noreferrer"
