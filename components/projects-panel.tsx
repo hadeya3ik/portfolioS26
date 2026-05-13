@@ -112,7 +112,7 @@ function Projects() {
           index={1}
         >
           <Image
-            src="/images/loading.png"
+            src="/images/Loading.png"
             className="h-full w-full select-none object-cover"
             alt="Warframes April Fools Page Thumbnail"
             width={800}
